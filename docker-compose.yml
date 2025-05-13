@@ -8,8 +8,6 @@ services:
     env_file:
       - .env
     restart: always
-    ports:
-      - '12005:3000'
     environment:
       - NODE_ENV=production
     depends_on:
@@ -25,8 +23,6 @@ services:
     env_file:
       - .env
     restart: always
-    ports:
-      - '12007:12007'
     environment:
       - NODE_ENV=production
     extra_hosts:

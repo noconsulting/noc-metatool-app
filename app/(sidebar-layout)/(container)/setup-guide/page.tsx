@@ -65,7 +65,7 @@ export default function SetupGuidePage() {
           <div className='relative mb-6'>
             <button
               onClick={() => {
-                const endpoint = `https://noc-metatool-app.srv817320.hstgr.cloud/sse with Authorization: Bearer ${apiKey?.api_key ?? '<create an api key first>'}`;
+                const endpoint = `https://noc-metatool-app-proxy.srv817320.hstgr.cloud/sse with Authorization: Bearer ${apiKey?.api_key ?? '<create an api key first>'}`;
                 navigator.clipboard.writeText(endpoint);
                 toast({
                   description: 'API endpoint copied to clipboard',
@@ -77,7 +77,7 @@ export default function SetupGuidePage() {
             </button>
             <Highlight
               theme={themes.github}
-              code={`https://noc-metatool-app.srv817320.hstgr.cloud/sse with Authorization: Bearer ${apiKey?.api_key ?? '<create an api key first>'}`}
+              code={`https://noc-metatool-app-proxy.srv817320.hstgr.cloud/sse with Authorization: Bearer ${apiKey?.api_key ?? '<create an api key first>'}`}
               language='bash'>
               {({ tokens, getLineProps, getTokenProps }) => (
                 <pre className='bg-[#f6f8fa] text-[#24292f] p-4 rounded-md overflow-x-auto'>
@@ -100,7 +100,7 @@ export default function SetupGuidePage() {
           <div className='relative'>
             <button
               onClick={() => {
-                const endpoint = `https://noc-metatool-app.srv817320.hstgr.cloud/api-key/${apiKey?.api_key ?? '<create an api key first>'}/sse`;
+                const endpoint = `https://noc-metatool-app-proxy.srv817320.hstgr.cloud/api-key/${apiKey?.api_key ?? '<create an api key first>'}/sse`;
                 navigator.clipboard.writeText(endpoint);
                 toast({
                   description: 'URL-based API endpoint copied to clipboard',
@@ -112,7 +112,7 @@ export default function SetupGuidePage() {
             </button>
             <Highlight
               theme={themes.github}
-              code={`https://noc-metatool-app.srv817320.hstgr.cloud/api-key/${apiKey?.api_key ?? '<create an api key first>'}/sse`}
+              code={`https://noc-metatool-app-proxy.srv817320.hstgr.cloud/api-key/${apiKey?.api_key ?? '<create an api key first>'}/sse`}
               language='bash'>
               {({ tokens, getLineProps, getTokenProps }) => (
                 <pre className='bg-[#f6f8fa] text-[#24292f] p-4 rounded-md overflow-x-auto'>
