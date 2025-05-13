@@ -73,7 +73,7 @@ For Claude Desktop, the config json should look like this:
       "args": ["-y", "@metamcp/mcp-server-metamcp@latest"],
       "env": {
         "METAMCP_API_KEY": "<your api key>",
-        "METAMCP_API_BASE_URL": "http://localhost:12005"
+        "METAMCP_API_BASE_URL": "https://noc-metatool-app.srv817320.hstgr.cloud"
       }
     }
   }
