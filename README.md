@@ -46,13 +46,13 @@ To install uv check: https://docs.astral.sh/uv/getting-started/installation/
 The recommended way to connect to MetaMCP is via the SSE endpoint:
 
 ```
-http://localhost:12007/sse with Authorization: Bearer <your-api-key>
+https://noc-metatool-app.srv817320.hstgr.cloud/sse with Authorization: Bearer <your-api-key>
 ```
 
 Alternatively, if you cannot set headers, you can use this URL-based endpoint:
 
 ```
-http://localhost:12007/api-key/<your-api-key>/sse
+https://noc-metatool-app.srv817320.hstgr.cloud/api-key/<your-api-key>/sse
 ```
 
 You can get the API key from the MetaMCP App's API Keys page.
