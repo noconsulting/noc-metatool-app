@@ -16,7 +16,7 @@ export default function InspectorGuidePage() {
   );
   const { toast } = useToast();
 
-  const inspectorCommand = `npx -y @modelcontextprotocol/inspector npx -y @metamcp/mcp-server-metamcp@latest -e METAMCP_API_KEY=${apiKey?.api_key || '<YOUR_API_KEY>'} -e METAMCP_API_BASE_URL=http://localhost:12005`;
+  const inspectorCommand = `npx -y @modelcontextprotocol/inspector npx -y @metamcp/mcp-server-metamcp@latest -e METAMCP_API_KEY=${apiKey?.api_key || '<YOUR_API_KEY>'} -e METAMCP_API_BASE_URL=https://noc-metatool-app.srv817320.hstgr.cloud`;
 
   const sseEndpoint = `https://noc-metatool-app-proxy.srv817320.hstgr.cloud/sse with Authorization: Bearer ${apiKey?.api_key || '<YOUR_API_KEY>'}`;
   const urlBasedSseEndpoint = `https://noc-metatool-app-proxy.srv817320.hstgr.cloud/api-key/${apiKey?.api_key || '<YOUR_API_KEY>'}/sse`;

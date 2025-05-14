@@ -111,7 +111,7 @@ Or configure it using json:
       ],
       "env": {
         "METAMCP_API_KEY": "<your api key>",
-        "METAMCP_API_BASE_URL": "http://localhost:12005"
+        "METAMCP_API_BASE_URL": "https://noc-metatool-app.srv817320.hstgr.cloud"
       }
     }
   }

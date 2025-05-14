@@ -180,7 +180,7 @@ export default function SetupGuidePage() {
                           env: {
                             METAMCP_API_KEY:
                               apiKey?.api_key ?? '<create an api key first>',
-                            METAMCP_API_BASE_URL: "http://localhost:12005"
+                            METAMCP_API_BASE_URL: "https://noc-metatool-app.srv817320.hstgr.cloud"
                           },
                         },
                       },
@@ -206,7 +206,7 @@ export default function SetupGuidePage() {
       "args": ["-y", "@metamcp/mcp-server-metamcp@latest"],
       "env": {
         "METAMCP_API_KEY": "${apiKey?.api_key ?? '<create an api key first>'}",
-        "METAMCP_API_BASE_URL": "http://localhost:12005"
+        "METAMCP_API_BASE_URL": "https://noc-metatool-app.srv817320.hstgr.cloud"
       }
     }
   }
@@ -336,7 +336,7 @@ export default function SetupGuidePage() {
                         ],
                         env: {
                           METAMCP_API_KEY: apiKey?.api_key ?? '<create an api key first>',
-                          METAMCP_API_BASE_URL: "http://localhost:12005"
+                          METAMCP_API_BASE_URL: "https://noc-metatool-app.srv817320.hstgr.cloud"
                         }
                       }
                     }
@@ -367,7 +367,7 @@ export default function SetupGuidePage() {
       ],
       "env": {
         "METAMCP_API_KEY": "${apiKey?.api_key ?? '<create an api key first>'}",
-        "METAMCP_API_BASE_URL": "http://localhost:12005"
+        "METAMCP_API_BASE_URL": "https://noc-metatool-app.srv817320.hstgr.cloud"
       }
     }
   }
