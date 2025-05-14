@@ -41,8 +41,8 @@ RUN addgroup --system --gid 1001 nodejs && \
 ENV NODE_ENV=production
 ENV HOME=/home/expressjs
 
-USER expressjs
+#USER expressjs
 
 EXPOSE 12007
 
-CMD ["node", "build/index.js"] 
+CMD ["node", "build/index.js"]
