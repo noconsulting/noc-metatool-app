@@ -63,7 +63,7 @@ export function useConnectionMulti({
       const proxyHealthUrl = new URL(
         process.env.USE_DOCKER_HOST === 'true'
           ? `http://host.docker.internal:12007/health`
-          : `https://noc-metatool-app-proxy.srv817320.hstgr.cloud/health`
+          : `https://noc-metatool-proxy.srv817320.hstgr.cloud/health`
       );
       const proxyHealthResponse = await fetch(proxyHealthUrl);
       const proxyHealth = await proxyHealthResponse.json();
@@ -162,7 +162,7 @@ export function useConnectionMulti({
     const mcpProxyServerUrl = new URL(
       process.env.USE_DOCKER_HOST === 'true'
         ? `http://host.docker.internal:12007/server/${serverUuid}/sse`
-        : `https://noc-metatool-app-proxy.srv817320.hstgr.cloud/server/${serverUuid}/sse`
+        : `https://noc-metatool-proxy.srv817320.hstgr.cloud/server/${serverUuid}/sse`
     );
     mcpProxyServerUrl.searchParams.append(
       'transportType',
